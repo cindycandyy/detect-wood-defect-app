@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brown2"
+    tools:context=".MainActivity">
+
+    <!-- User Text -->
+    <TextView
+        android:id="@+id/userText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:drawableLeft="@drawable/user_icon"
+        android:text="User"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="57dp"
+        android:layout_height="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/logo" />
+
+    <!-- Cube Image -->
+    <ImageView
+        android:id="@+id/cubeImage"
+        android:layout_width="261dp"
+        android:layout_height="238dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/home_asset"
+        android:layout_margin="8dp"/>
+
+    <!-- Take a Picture Button -->
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cubeImage"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/brown1"
+        android:textColor="@color/white"
+        android:text="Start"
+        android:textSize="16sp" />
+
+</RelativeLayout>

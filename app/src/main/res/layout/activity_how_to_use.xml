@@ -1,0 +1,48 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brown2"
+    android:padding="16dp">
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/title_how_to_use"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="How To Use"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <!-- Langkah-langkah penggunaan -->
+    <TextView
+        android:id="@+id/steps_how_to_use"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_how_to_use"
+        android:layout_marginTop="16dp"
+        android:text="1. Prepare a smartphone camera with good photo quality\n\n2. Take a photo of the wood with a clear and detailed image.\n\n3. The photo will be automatically saved to Woodyn\n\n4. Run the analysis process on Woodyn\n\n5. Read the detection results displayed by Woodyn"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:lineSpacingExtra="6dp"/>
+
+    <!-- Tombol untuk membuka kamera -->
+    <Button
+        android:id="@+id/btn_next_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/brown1"
+        android:text="Next"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:drawableRight="@drawable/next_icon"
+        android:drawablePadding="8dp"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="12dp"/>
+</RelativeLayout>

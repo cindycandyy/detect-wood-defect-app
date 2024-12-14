@@ -1,0 +1,67 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brown2"
+    tools:context=".MainActivity">
+
+    <!-- Area untuk menampilkan gambar -->
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/image_icon"
+        android:contentDescription="Captured Image"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/darker_gray"/>
+
+    <!-- Area untuk hasil prediksi -->
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_view"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:padding="12dp"
+        android:background="@android:color/white"
+        android:text="Prediction result will appear here"
+        android:textAlignment="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp"
+        android:elevation="4dp"
+        android:gravity="center"/>
+
+    <!-- Button untuk membuka kamera -->
+    <Button
+        android:id="@+id/btn_open_camera"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result_text"
+        android:layout_marginTop="48dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/brown1"
+        android:text="Take a Picture"
+        android:drawableLeft="@drawable/camera_icon"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"/>
+
+    <!-- Button untuk mengunggah gambar -->
+    <Button
+        android:id="@+id/btn_upload_image"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_open_camera"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/brown1"
+        android:text="Upload Image"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/upload_icon"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
